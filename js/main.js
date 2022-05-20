@@ -142,6 +142,11 @@ add_btn.addEventListener('click', (e) => {
             student_grade_parsed = parseInt(student_grade.value);
         }
     }
+
+    if(student_grade.value < 0 || student_grade.value > 100){
+        alert("Student Grade Must Be Between 0 : 100");
+        return;
+    }
     
     const students = Store.all();
     const id = students.length + 1;
