@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIGERS TASK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <header>Task</header>
+        <main>
+            <nav>
+                <div class="row">
+                    <b>Department</b>
+                    <div class="boxes">
+                        <label>SD</label><input type="radio" class="dep" value="sd" name="dep">
+                        <label>OS</label><input type="radio" class="dep" value="os" name="dep">
+                        <label>EL</label><input type="radio" class="dep" value="el" name="dep">
+                    </div>
+                 </div>
+                 <div class="row">
+                     <label>Student Name</label>
+                     <input type="text" placeholder="Name..." id="student_name">
+                 </div>
+                 <div class="row">
+                    <label>Student Grade</label>
+                    <input type="number" placeholder="Grade..." id="student_grade">
+                </div>
+            </nav>
+            <button class="add_btn" id="add_btn">ADD</button>
+        </main>
+        <section class="filter">
+            <div>
+                <label for="sort">Sort</label>
+                <select name="sort" id="sort">
+                    <option value="name">Name</option>
+                    <option value="grade">Grade</option>
+                </select>
+            </div>
+            <div>
+                <label for="filter">Filter</label>
+                <select name="filter" id="filter">
+                    <option value="success">Successed Students</option>
+                    <option value="fail">Failed Students</option>
+                </select>
+            </div>
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Grade</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>TIGER</td>
+                    <td>70</td>
+                    <td><button class="remove">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>TIGER</td>
+                    <td>70</td>
+                    <td><button class="remove">Delete</button></td>
+                </tr>  <tr>
+                    <td>TIGER</td>
+                    <td>70</td>
+                    <td><button class="remove">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>TIGER</td>
+                    <td>70</td>
+                    <td><button class="remove">Delete</button></td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <script type="module" src="js/helpers.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
